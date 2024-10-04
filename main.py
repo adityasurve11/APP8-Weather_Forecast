@@ -1,5 +1,5 @@
 import streamlit as st
-import plotly.express as
+import plotly.express as px
 
 
 st.title("Weather Forecast For Upcoming Days")
