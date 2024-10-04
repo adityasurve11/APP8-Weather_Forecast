@@ -15,9 +15,11 @@ else:
     print(st.subheader(f"{option} for the next {days} days in {place}"))
 
 
-dates = ["2024-04-10", "2024-05-10", "2024-06-10"]
-temperatures = [10, 11, 15]
-temperatures = [days * i for i in temperatures ]
+def get_data(days):
+    dates = ["2024-04-10", "2024-05-10", "2024-06-10"]
+    temperatures = [10, 11, 15]
+    temperatures = [days * i for i in temperatures]
+    return dates, temperatures
 
 figure = px.line(x=dates, y=temperatures, labels={"x": "Date", "y": "Temperature (C)"})
 st.plotly_chart(figure)
