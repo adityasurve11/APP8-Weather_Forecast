@@ -15,5 +15,6 @@ else:
     print(st.subheader(f"{option} for the next {days} days in {place}"))
 
 
-figure = px.line()
+dates = [""]
+figure = px.line(x, y, labels)
 st.plotly_chart()
