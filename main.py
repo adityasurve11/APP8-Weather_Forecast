@@ -11,3 +11,6 @@ if days == min_value:
     print(st.subheader(f"{option} for the next {days} day in {place}"))
 else:
     print(st.subheader(f"{option} for the next {days} days in {place}"))
+
+
+st.plotly_chart()
