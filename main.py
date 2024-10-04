@@ -17,7 +17,7 @@ else:
 
 dates = ["2024-04-10", "2024-05-10", "2024-06-10"]
 temperatures = [10, 11, 15]
-temperatures = []
+temperatures = [days * i for i in temperatures ]
 
 figure = px.line(x=dates, y=temperatures, labels={"x": "Date", "y": "Temperature (C)"})
 st.plotly_chart(figure)
