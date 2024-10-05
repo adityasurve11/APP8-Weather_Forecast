@@ -1,2 +1,2 @@
-def get_data(place, forecast_days, options):
+def get_data(place, forecast_days, kind):
 

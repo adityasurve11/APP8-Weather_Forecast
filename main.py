@@ -15,7 +15,7 @@ if days == min_value:
 else:
     print(st.subheader(f"{option} for the next {days} days in {place}"))
 
-data = get_data()
+data = get_data(place, days, option)
 
 d, t = get_data(days)
 
