@@ -15,12 +15,6 @@ else:
     print(st.subheader(f"{option} for the next {days} days in {place}"))
 
 
-def get_data(days):
-    dates = ["2024-04-10", "2024-05-10", "2024-06-10", "2024-07-10"]
-    temperatures = [11, 13, 10, 15]
-    temperatures = [days * i for i in temperatures]
-    return dates, temperatures
-
 
 d, t = get_data(days)
 
