@@ -8,3 +8,6 @@ def get_data(place, forecast_days, kind):
     content = response.json()
     return data
 
+if __name__=="main"
+    get_data()
+
