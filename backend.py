@@ -16,5 +16,5 @@ def get_data(place, forecast_days=None, kind=None):
     return data
 
 if __name__=="main":
-    print(get_data(place="Tokyo", forecast_days=3))
+    print(get_data(place="Tokyo", forecast_days=3, kind="Temperature"))
 
