@@ -9,5 +9,5 @@ def get_data(place, forecast_days=None, kind=None):
     return data
 
 if __name__=="main"
-    get_data(place="Tokyo")
+    print(get_data(place="Tokyo"))
 
