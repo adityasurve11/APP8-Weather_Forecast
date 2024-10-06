@@ -9,7 +9,7 @@ def get_data(place, forecast_days=None, kind=None):
     filtered_data = data["list"]
     nr_values = 8 * forecast_days
     filtered_data = filtered_data[:nr_values]
-    if Kind == "Tempearture":
+    if kind == "Tempearture":
         filtered_data = [dict["main"]["temp"] for dict in filtered_data]
     if kind == "Sky":
         filtered_data =
