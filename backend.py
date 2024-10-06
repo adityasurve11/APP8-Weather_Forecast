@@ -8,6 +8,6 @@ def get_data(place, forecast_days=None, kind=None):
     content = response.json()
     return data
 
-if __name__=="main"
+if __name__=="main":
     print(get_data(place="Tokyo"))
 
