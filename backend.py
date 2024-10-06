@@ -12,10 +12,9 @@ def get_data(place, forecast_days=None, kind=None):
     if kind == "Tempearture":
         filtered_data = [dict["main"]["temp"] for dict in filtered_data]
     if kind == "Sky":
-        filtered_data = [dict["weather"]["main"] for dict in filtered_data]
-
+        filtered_data = [dict["weather"][0]["main"] for dict in filtered_data]
     return data
 
 if __name__=="main":
-    print(get_data(place="Tokyo"))
+    print(get_data(place="Tokyo", forecast_days=3))
 
