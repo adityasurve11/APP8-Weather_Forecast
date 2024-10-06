@@ -8,6 +8,7 @@ def get_data(place, forecast_days=None, kind=None):
     data = response.json()
     filtered_data = data["list"]
     nr_values = 8 * forecast_days
+    filtered_data = filtered_data[:nr_values]
     return data
 
 if __name__=="main":
