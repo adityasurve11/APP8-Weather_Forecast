@@ -6,4 +6,5 @@ def get_data(place, forecast_days, kind):
     url = f"https://api.openweathermap.org/data/2.5/forecast?q={place}&appid={API_KEY}"
     response = requests.get(url)
     content = response.json()
+    return data
 
