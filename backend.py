@@ -16,6 +16,7 @@ def get_data(place, forecast_days=None, kind=None):
         filtered_data = [dict["weather"][0]["main"] for dict in filtered_data]
     return data
 
-if __name__=="main":
+
+if __name__=="__main__":
     print(get_data(place="Tokyo", forecast_days=3, kind="Temperature"))
 
