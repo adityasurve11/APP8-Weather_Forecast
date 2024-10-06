@@ -10,7 +10,8 @@ def get_data(place, forecast_days=None, kind=None):
     nr_values = 8 * forecast_days
     filtered_data = filtered_data[:nr_values]
     if Kind == "Tempearture":
-        filtered_data = [dict["main"]["temp"]]
+        filtered_data = [dict["main"]["temp"] for dict in filtered_data]
+
     return data
 
 if __name__=="main":
